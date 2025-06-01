@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Menus</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      display: flex; 
+      justify-content: space-around; 
+      flex-wrap: wrap;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .menu {
+      width: 400px;
+      height: 550px;
+      margin: 15px;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      position: relative;
+    }
+    .menu h2 {
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    }
+    .menu ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .menu li {
+      margin-bottom: 8px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px;
+      border-radius: 5px;
+    }
+    /* Specific backgrounds */
+    #breakfast {
+      background-image: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?&auto=format&fit=crop&w=400&h=550&q=80');
+    }
+    #lunch {
+      background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?&auto=format&fit=crop&w=400&h=550&q=80');
+      background-position: top center;
+    }
+    #dinner {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?&auto=format&fit=crop&w=400&h=550&q=80');
+      background-repeat: no-repeat;
+    }
+    /* Overlay to improve readability */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .menu-content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Breakfast Menu -->
+  <div class="menu" id="breakfast">
+    <div class="overlay">
+      <div class="menu-content">
+        <h2>Breakfast</h2>
+        <ul>
+          <li>Fluffy Pancakes &ndash; $5.99</li>
+          <li>Veggie Omelette &ndash; $6.49</li>
+          <li>French Toast &ndash; $5.49</li>
+          <li>Fresh Fruit Bowl &ndash; $4.99</li>
+          <li>Coffee &ndash; $1.99</li>
+          <li>Orange Juice &ndash; $2.49</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lunch Menu -->
+  <div class="menu" id="lunch">
+    <div class="overlay">
+      <div class="menu-content">
+        <h2>Lunch</h2>
+        <ul>
+          <li>Grilled Chicken Sandwich &ndash; $8.99</li>
+          <li>Caesar Salad &ndash; $7.49</li>
+          <li>Club Sandwich &ndash; $8.49</li>
+          <li>Tomato Soup &ndash; $4.99</li>
+          <li>Iced Tea &ndash; $1.99</li>
+          <li>Soda &ndash; $1.49</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dinner Menu -->
+  <div class="menu" id="dinner">
+    <div class="overlay">
+      <div class="menu-content">
+        <h2>Dinner</h2>
+        <ul>
+          <li>Steak &ndash; $15.99</li>
+          <li>Grilled Salmon &ndash; $14.49</li>
+          <li>Spaghetti Bolognese &ndash; $11.99</li>
+          <li>Caesar Salad &ndash; $7.49</li>
+          <li>Red Wine &ndash; $5.99</li>
+          <li>Chocolate Cake &ndash; $4.99</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
